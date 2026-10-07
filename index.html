@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+      <header>
+    <div class="logo-title">
+        <img src="aaron.png" alt="AaronGo Logo">
+        <h1>AaronGo</h1>
+    </div>
+</header>
+
+<style>
+    .logo-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-title img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+</style>
+         <p><em>Your safe and convenient ride around the city.</em></p>
+
+     <nav>
+            <a href="#book">Book a Ride</a> |
+            <a href="#fleet">Our Vehicles</a> |
+            <a href="#map">Map</a> |
+            <a href="#media">Media</a> |
+            <a href="#schedule">Schedule</a> |
+            <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+    </header>
+    <main>
+        <section id="book">
+            <h2>Book a Ride</h2>
+        </section>
+    </main>
+        <form action="#" method="post">
+            <fieldset>
+             <legend>Details</legend>
+
+            <p><label for="fullname">Full name:</label>
+             <input type="text" id="fullname" name="fullname"
+            placeholder="Enter your full name" required></p>
+
+             <p> <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="09XXXXXXXXX" required></p>
+
+            <p><label for="email">Email:</label>
+             <input type="email" id="email" name="email"
+             placeholder="example@email.com"></p>
+
+            <p> <label for="pickup">Pick-up location:</label>
+            <input type="text" id="pickup" name="pickup"
+             list="places" placeholder="Choose a place"> </p>
+
+            <p><label for="dropoff">Drop-off location:</label>
+             <input type="text" id="dropoff" name="dropoff"
+             list="places" placeholder="Choose a place"></p>
+
+             <datalist id="places">
+            <option value="Jeep Terminal">
+            <option value="City Hall">
+            <option value="Home Address">
+            <option value="University Of Baguio">
+            <option value="SM City Baguio">
+            </datalist>
+
+             <p><label for="date">Date:</label>
+            <input type="date" id="date" name="date" required></p>
+            
+            <p><label for="time">Time:</label>
+            <input type="time" id="time" name="time" required></p>
+
+            <p><label for="passengers">Passengers:</label>
+                <input type="number"
+                id="passengers" name="passengers"min="1" max="10"
+            value="1" required>
+            </p>
+             <p>
+            <label for="vehicle">Vehicle type:</label>
+             <select id="vehicle" name="vehicle">
+                <option value="taxi">Taxi</option>
+                <option value="van">Van</option>
+                <option value="shuttle">Shuttle Bus</option>
+                <option value="motorcycle">Motorcycle Taxi</option>
+                <option value="tricycle">Tricycle</option>
+             </select>
+           </p>
+
+            <p>Payment method:</p>
+
+             <p><input type="radio" id="cash" name="payment"
+                               value="cash" checked>
+                        <label for="cash">Cash</label>
+                        <input type="radio" id="card" name="payment"
+                               value="card">
+                        <label for="card">Card</label>
+                        <input type="radio" id="ewallet" name="payment"
+                               value="ewallet">
+                        <label for="ewallet">E-Wallet</label>
+                    </p>
+
+                    <p>Extras:</p>
+
+                    <p>
+                        <input type="checkbox" id="luggage" name="extras"
+                               value="extra-luggage">
+                        <label for="luggage">Extra luggage</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="childseat" name="extras"
+                               value="child-seat">
+                        <label for="childseat">Child seat</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="wheelchair" name="extras"
+                               value="wheelchair-accessible">
+                        <label for="wheelchair">Wheelchair accessible</label>
+                    </p>
+
+                    <p>
+                        <label for="notes">Notes for the driver:</label><br>
+                        <textarea id="notes" name="notes" rows="5" cols="40"
+                                  placeholder="Enter any instructions for the driver"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms" name="terms"
+                               value="agree" required>
+                        <label for="terms">
+                            I agree to the
+                            <a href="#terms-info">Terms &amp; Conditions</a>
+                        </label>
+                    </p><button type="submit">Book Now</button>
+                    <button type="reset">Clear</button>
+             </fieldset>
+            </form>
+
+            <hr>
+        </section>
+
+         <section id="fleet">
+            <h2>Our Vehicles</h2>
+
+            <figure>
+                <img src="taxi.jpg"
+                     alt="Taxi vehicle"
+                     width="400"
+                     height="250">
+                <figcaption>
+                    <strong>Taxi</strong> - A comfortable ride for everyday city trips.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="van.jpg"
+                     alt="GoRide van"
+                     width="400"
+                     height="250">
+                <figcaption>
+                    <strong>Van</strong> - Spacious transportation for families and groups.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="shuttle.jpg"
+                     alt="GoRide shuttle bus"
+                     width="400"
+                     height="250">
+                <figcaption>
+                    <strong>Shuttle Bus</strong> - Convenient transportation for larger groups.
+                </figcaption>
+            </figure>
+            <hr>
+        </section>
+
+         <section id="media">
+            <h2>Media</h2>
+
+            <h3>How AaronGo Works</h3>
+
+            <video width="480" controls
+                   poster="https://www.youtube.com/watch?v=d8iuUDam0Fo&list=RDd8iuUDam0Fo&start_radio=1">
+                <source src="video.mp4" type="video/mp4">
+                <source src="aarongo.ogg" type="video/ogg">
+            </video>
+
+            <h3>Driver Announcement</h3>
+
+            <audio controls>
+                <source src="woo.mp3" type="audio/mpeg">
+                <source src="announcement.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Watch on YouTube</h3>
+
+            <iframe
+                width="560"
+                src="https://www.youtube.com/watch?v=d8iuUDam0Fo&list=RDd8iuUDam0Fo&start_radio=1"
+                title="AaronGo Transportation Video"
+                allowfullscreen>
+            </iframe>
+
+            <hr>
+        </section>
+
+        <section id="schedule">
+            <h2>Shuttle Schedule</h2>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption>Daily departures from Central Terminal</caption>
+
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Fare</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Terminal to University of Baguio</td>
+                        <td>8:00 AM</td>
+                        <td>8:20 AM</td>
+                        <td>₱30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terminal to SM city of baguio</td>
+                        <td>9:00 AM</td>
+                        <td>9:30 AM</td>
+                        <td>₱40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terminal to Burnham</td>
+                        <td>10:00 AM</td>
+                        <td>10:45 AM</td>
+                        <td>₱25</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terminal to John Hay</td>
+                        <td>11:00 AM</td>
+                        <td>11:15 AM</td>
+                        <td>₱80</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Check Your Route</h3>
+
+            <form method="get" action="#">
+                <label for="route">Select a route:</label>
+
+                <select id="route" name="route">
+                    <option value="university">Terminal to University of Baguio</option>
+                    <option value="sm-city">Terminal to SM City of Baguio</option>
+                    <option value="burnham">Terminal to Burnham</option>
+                    <option value="john-hay">Terminal to John Hay</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+
+            <hr>
+        </section>
+
+        <section id="contact">
+            <h2>Contact &amp; Feedback</h2>
+
+            <form action="#" method="post"
+                  enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Send Feedback</legend>
+
+                    <p>
+                        <label for="feedback-name">Your name:</label>
+                        <input type="text" id="feedback-name"
+                               name="feedback-name" required>
+                    </p>
+
+                    <p>
+                        <label for="rating">Rate your ride (1-5):</label>
+                        <input type="range" id="rating" name="rating"
+                               min="1" max="5" value="5">
+                    </p>
+
+                    <p>
+                        <label for="topic">Topic:</label>
+
+                        <select id="topic" name="topic">
+                            <option value="compliment">Compliment</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="lost-item">Lost item</option>
+                            <option value="suggestion">Suggestion</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+
+                        <textarea id="message" name="message"
+                                  rows="6" cols="50"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="photo">Attach a photo (optional):</label>
+                        <input type="file" id="photo" name="photo"
+                               accept="image/*">
+                    </p>
+
+                    <button type="submit">Send Feedback</button>
+
+                </fieldset>
+            </form>
+
+             <h3>Reach Us</h3>
+
+            <address>
+                GoRide Transportation Services<br>
+                Central Terminal, Baguio City, Philippines<br>
+                Phone:
+                <a href="tel:+639123456789">+63 912 345 6789</a><br>
+                Email:
+                <a href="mailto:goride@example.com">goride@example.com</a>
+            </address>
+
+            <hr>
+        </section>
+            <section id="links" style="text-align: left;">
+            <h2>Useful Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.openstreetmap.org"
+                       target="_blank"
+                       rel="noopener">
+                        OpenStreetMap
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://maps.google.com"
+                       target="_blank"
+                       rel="noopener">
+                        Google Maps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com"
+                       target="_blank"
+                       rel="noopener">
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#top">Back to top</a>
+                </li>
+            </ul>
+        </section>
+ <section id="terms-info">
+            <h2>Terms &amp; Conditions</h2>
+
+            <details>
+                <summary>Read the terms</summary>
+
+                <ol>
+                    <li>Passengers must provide accurate booking information.</li>
+                    <li>Passengers must follow the safety instructions of the driver.</li>
+                    <li>GoRide is not responsible for items left inside the vehicle.</li>
+                    <li>Bookings should be cancelled as early as possible when they are no longer needed.</li>
+                </ol>
+            </details>
+        </section>
+
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 AaronGo Transportation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
